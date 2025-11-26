@@ -1,5 +1,17 @@
 [
   {
-
+    "MaleName": "Ibrahim",
+    "FemaleName": "Maryam",
+    "CountryE": "Egypt",
+    "CountryA": "Armenia",
+    "CountryNotExist": "Tokyo",
+    "SignInTitle": "General Store",
+    "ValidationMessage": "Please enter your name",
+    "LabelNameFiled": "Your Name",
+    "FemaleTrue": "true",
+    "FemaleFalse": "false",
+    "MaleTrue": "true",
+    "MaleFalse": "false",
+    "ProductsPage": "Products"
   }
 ]

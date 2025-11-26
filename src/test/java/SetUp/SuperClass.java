@@ -9,7 +9,9 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.asserts.SoftAssert;
 
 import java.io.File;
@@ -33,11 +35,11 @@ public class SuperClass
     public static WebDriverWait wait;
 
     // Make The Pages As Global
-    P01_SignIn signIn;
-    P02_AddToCart addToCart;
-    P03_Cart cart;
+    public P01_SignIn signIn;
+    public P02_AddToCart addToCart;
+    public P03_Cart cart;
 
-    @BeforeClass
+    @BeforeMethod
     public void OpenSetUp () throws MalformedURLException, URISyntaxException
     {
         // Step 1: Create Object From Class Appium Service Builder
@@ -73,7 +75,7 @@ public class SuperClass
         cart = new P03_Cart(driver);
     }
 
-    @AfterClass
+    @AfterMethod
     public void CloseSetUp () throws InterruptedException {
         // Step 1: Manage unconditional synchronization
         Thread.sleep(3000);

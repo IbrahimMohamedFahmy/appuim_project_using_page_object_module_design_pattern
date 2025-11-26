@@ -11,7 +11,9 @@
             </run>
         </groups>
         <classes>
-
+            <class name="TestCases.T01_SignIn"></class>
+            <class name="TestCases.T02_AddToCart"></class>
+            <class name="TestCases.T03_Cart"></class>
         </classes>
     </test>
 </suite>

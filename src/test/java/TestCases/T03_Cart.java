@@ -1,4 +1,8 @@
 package TestCases;
 
-public class T03_Cart {
+import SetUp.SuperClass;
+
+public class T03_Cart extends SuperClass
+{
+
 }
