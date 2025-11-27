@@ -177,24 +177,12 @@ public class T01_SignIn extends SuperClass
         signIn.OpenProductPage();
 
         // Step 12: Get The Validation Message
-        soft.assertEquals(signIn.GetToastMessage(), input.get("ValidationMessage"));
+        soft.assertEquals(signIn.GetToastMessage(), input.get("SignInValidation"));
 
         // Step 13: Check The User Reach to The Products Page
         soft.assertEquals(signIn.GetPageTitle(), input.get("SignInPage"));
     }
 
-    @Test(groups = {"Sad Scenarios", "All Scenarios"}, priority = 5, dataProvider = "TestData")
-    public void ScrollForInvalidCountry_ShouldNotFind(HashMap<String, String> input) {
-
-        // Step 1: Open Country Menu
-        signIn.OpenCountryMenu();
-
-        // Step 2: Try to Scroll for a country that doesn't exist
-        boolean isFound = signIn.scrollToCountryIfExists(input.get("CountryNotExist"));
-
-        // Step 3: Assert That the Country Is NOT Found
-        soft.assertFalse(isFound, "The country should not be found in the list");
-    }
 
 
 

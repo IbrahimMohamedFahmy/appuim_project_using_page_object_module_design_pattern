@@ -5,13 +5,17 @@
     "CountryE": "Egypt",
     "CountryA": "Armenia",
     "CountryNotExist": "Tokyo",
+    "ProductNotExist": "Tokyo",
     "SignInTitle": "General Store",
-    "ValidationMessage": "Please enter your name",
+    "SignInValidation": "Please enter your name",
     "LabelNameFiled": "Your Name",
     "FemaleTrue": "true",
     "FemaleFalse": "false",
     "MaleTrue": "true",
     "MaleFalse": "false",
-    "ProductsPage": "Products"
+    "ProductsPage": "Products",
+    "CartPage": "Cart",
+    "TargetProduct": "Air Jordan 9 Retro",
+    "ProductsValidation": "Please add some product at first"
   }
 ]

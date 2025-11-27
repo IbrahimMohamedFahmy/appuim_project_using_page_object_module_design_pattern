@@ -139,4 +139,10 @@ public class P01_SignIn
         }
     }
 
+    public void SignIn(String name)
+    {
+        NameTextFiled.sendKeys(name);
+        SubmitButton.click();
+    };
+
 }
