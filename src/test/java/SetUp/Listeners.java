@@ -3,6 +3,7 @@ package SetUp;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import io.appium.java_client.android.AndroidDriver;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -47,7 +48,7 @@ public class Listeners implements ITestListener {
         WebDriver driver = ((SuperClass) result.getInstance()).driver;
 
         try {
-            String screenshotPath = screenshot(result.getMethod().getMethodName(), driver);
+            String screenshotPath = screenshot(result.getMethod().getMethodName(), (AndroidDriver) driver);
             test.addScreenCaptureFromPath(screenshotPath, result.getMethod().getMethodName());
             test.fail(result.getThrowable());
         } catch (IOException e) {
@@ -65,7 +66,7 @@ public class Listeners implements ITestListener {
         extent.flush();
     }
 
-    public String screenshot(String testCaseName, WebDriver driver) throws IOException {
+    public String screenshot(String testCaseName, AndroidDriver driver) throws IOException {
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         String fileDirection = System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
         FileUtils.copyFile(screenshot, new File(fileDirection));

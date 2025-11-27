@@ -56,6 +56,7 @@ public class SuperClass
 
         // Step 5: Set The APK File Path
         setup.setApp("/Users/essamfahmy/IdeaProjects/appuim_project_using_page_object_module_design_pattern/src/main/resources/General-Store.apk");
+        setup.setChromedriverExecutable("/Users/essamfahmy/IdeaProjects/appuim_project_using_page_object_module_design_pattern/src/main/resources/chromedriver_mac64/chromedriver");
 
         // Step 6: Create Object From Android Driver Class
         driver = new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(),setup);

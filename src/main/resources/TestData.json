@@ -9,6 +9,7 @@
     "SignInTitle": "General Store",
     "SignInValidation": "Please enter your name",
     "LabelNameFiled": "Your Name",
+    "LabelTotalPrice": "Total Purchase Amount:",
     "FemaleTrue": "true",
     "FemaleFalse": "false",
     "MaleTrue": "true",
@@ -16,6 +17,7 @@
     "ProductsPage": "Products",
     "CartPage": "Cart",
     "TargetProduct": "Air Jordan 9 Retro",
-    "ProductsValidation": "Please add some product at first"
+    "ProductsValidation": "Please add some product at first",
+    "Appium": "Appium"
   }
 ]
